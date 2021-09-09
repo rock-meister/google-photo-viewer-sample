@@ -96,7 +96,7 @@
 		var user = GoogleAuth.currentUser.get();
 		var isAuthorized = user.hasGrantedScopes(SCOPE);
 		if (isAuthorized) {
-			$('#sign-in-or-out-button').html('Sign Out!');
+			$('#sign-in-or-out-button').html('Sign Out!!!');
 			$('#revoke-access-button').css('display', 'inline-block');
 			$('#auth-status').html('You are currently signed in and have granted ' +
 				'access to this app.');
@@ -106,7 +106,7 @@
 			// getAllPhotoGoogleApi() 
 			listAlbums()
 		} else {
-			$('#sign-in-or-out-button').html('Sign In/Authorize!');
+			$('#sign-in-or-out-button').html('Sign In/Authorize!!!');
 			$('#revoke-access-button').css('display', 'none');
 			$('#auth-status').html('You have not authorized this app or you are ' +
 				'signed out.');
@@ -273,7 +273,7 @@
 
 </script>
 
-<button id="sign-in-or-out-button" style="margin-left: 25px">SignIn/Authorize!</button>
+<button id="sign-in-or-out-button" style="margin-left: 25px">SignIn/Authorize!!!</button>
 <button id="revoke-access-button" style="display: none; margin-left: 25px">Revoke access</button>
 
 <div id="auth-status" style="display: inline; padding-left: 25px"></div>
